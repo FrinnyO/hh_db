@@ -1,0 +1,28 @@
+[project]
+name = "pythonproject1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "volko",email = "Toxa.Vol@yandex.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+requests = "^2.32.3"
+types-requests = "^2.32.0.20241016"
+
+
+[tool.poetry.group.lint.dependencies]
+black = "^25.1.0"
+isort = "^6.0.0"
+mypy = "^1.15.0"
+flake8 = "^7.1.2"
+
